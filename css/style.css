@@ -447,9 +447,14 @@ section {
   font-weight: normal;
   line-height: 30px;
   text-decoration: none;
+  width: 100%;
 }
 .projectMenu nav a:hover, .projectMenu nav a.active{
   font-weight: bold;
+}
+.projectDetails{
+  position: relative;
+  margin-top: -20px;
 }
 .projectDetails h2, .projectDetails h4{
   font-family: 'Open Sans', helvetica, arial, sans-serif;
@@ -529,10 +534,17 @@ section {
   margin-bottom: 0;
 }
 
+/* Bootstrap overrides */
 
-
-
-
+.carousel-control-next, .carousel-control-prev{
+  width: auto;
+}
+.carousel-control-next{
+  right: -40px;
+}
+.carousel-control-prev{
+  left: -40px;
+}
 
 
 
@@ -543,7 +555,9 @@ section {
 /* -------------------------------- desktop  ------------------------------- */
 @media only screen and (min-width: 800px) {
   /* Style adjustments for viewports that meet the condition */
-
+body{
+  margin-top: 120px;
+}
 h1{
   font-size: 70px;
 }
@@ -770,7 +784,7 @@ footer ul a{ margin: 0 20px; }
 /* ------------------------- Project Styles here ----------------------------*/
 
 .project{
-  margin-top: 120px;
+  margin-top: 0px;
 }
 .spacing{
   margin-top: 40px;
@@ -802,7 +816,7 @@ footer ul a{ margin: 0 20px; }
   top: -26px;
 }
 .projectDetails h2{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .projectDetails section{
   margin-bottom: 160px;

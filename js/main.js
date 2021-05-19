@@ -15,4 +15,5 @@ $(".arrowWork").click(function(){
    }, 800);
 });
 
-$('.carousel').carousel();
+var myCarousel = document.querySelector('.carousel')
+var carousel = new bootstrap.Carousel(myCarousel)
